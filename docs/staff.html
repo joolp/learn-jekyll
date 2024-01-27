@@ -7,7 +7,7 @@ title: Staff
 <ul>
     {%for author in site.authors%}
     <li>
-        <h2>{{ author.name }}</h2>
+        <h1><a href="{{author.url}}">{{author.name}}</a></h1>
         <h3>{{ author.position }}</h3>
         <p>{{ author.content | markdownify }}</p>
     </li>
